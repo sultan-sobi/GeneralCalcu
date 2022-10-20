@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+ <h1>Calculator</h1>
+ <div class="calculator">
+  <div class="calc-head">
+    <input type="text"class="inputValue dd">
+  </div>
+
+  <div class="calc-body">
+      <div class="btn-value">
+        <input type="button"class="btn on" value="on"onclick="start()">
+        <input type="button"class="btn" value="1"onclick="getValue(1)">
+        <input type="button"class="btn" value="2"onclick="getValue(2)">
+        <input type="button"class="btn" value="3"onclick="getValue(3)">
+        <input type="button"class="btn" value="4"onclick="getValue(4)">
+      </div>
+
+      <div class="btn-value">
+        <input type="button"class="btn" value="0"onclick="getValue(0)">
+        <input type="button"class="btn" value="5"onclick="getValue(5)">
+        <input type="button"class="btn" value="6"onclick="getValue(6)">
+        <input type="button"class="btn" value="7"onclick="getValue(7)">
+        <input type="button"class="btn" value="8"onclick="getValue(8)">
+      </div>
+
+      <div class="btn-value">
+        <input type="button"class="btn" value="9"onclick="getValue(9)">
+        <input type="button"class="btn" value="+"onclick="getValue('+')">
+        <input type="button"class="btn" value="-"onclick="getValue('-')">
+        <input type="button"class="btn" value="x"onclick="getValue('*')">
+        <input type="button"class="btn del" value="del"onclick="delet()">
+      </div>
+      <div class="btn-value">
+        <input type="button"class="btn off" value="off"onclick="reset()">
+        <input type="button"class="btn" value="."onclick="getValue('.')">
+        <input type="button"class="btn" id="result"value="="onclick="calculate()">
+        <input type="button"class="btn" value="/"onclick="getValue('/')">
+        <input type="button"class="btn" value="%"onclick="getValue('%')">
+      </div>
+
+
+
+
+  </div>
+ </div>
+
+
+ <a href="https://www.google.com" target="_blank">google</a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="index.js"></script>  
+</body>
+</html>
